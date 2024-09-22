@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package ng.bossi.minekraft.paper.extensions
 
 import org.bukkit.Material

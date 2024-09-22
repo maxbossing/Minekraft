@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package ng.bossi.minekraft.extensions
 
 import ng.bossi.minekraft.json
