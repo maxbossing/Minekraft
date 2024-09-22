@@ -1,6 +1,6 @@
-package ng.bossi.minekraft.paper.core.tasks
+package ng.bossi.minekraft.paper.tasks
 
-import ng.bossi.minekraft.paper.core.MinekraftInstance
+import ng.bossi.minekraft.paper.MinekraftInstance
 import org.bukkit.Bukkit
 import org.bukkit.scheduler.BukkitRunnable
 import kotlin.time.Duration
@@ -42,13 +42,13 @@ fun task(
 
             if (isCancelled) {
                 if (shouldCancel || safeCallback)
-                    MinekraftInstance.kRunnableHolder.activate(this)
+                    KrunnableHolder.activate(this)
                 else
-                    MinekraftInstance.kRunnableHolder.remove(this)
+                    KrunnableHolder.remove(this)
             }
         }
     }.let { kTask ->
-        endCallback?.let { MinekraftInstance.kRunnableHolder.add(kTask, it, safeCallback) }
+        endCallback?.let { KrunnableHolder.add(kTask, it, safeCallback) }
         period?.let {
             if (sync) kTask.runTaskTimer(MinekraftInstance, delay.inWholeSeconds * 20, period.inWholeSeconds * 20)
             else kTask.runTaskTimerAsynchronously(MinekraftInstance, delay.inWholeSeconds * 20, period.inWholeSeconds * 20)

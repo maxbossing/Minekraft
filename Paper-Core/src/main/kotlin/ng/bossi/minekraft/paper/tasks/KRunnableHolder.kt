@@ -1,4 +1,4 @@
-package ng.bossi.minekraft.paper.core.tasks
+package ng.bossi.minekraft.paper.tasks
 
 import org.bukkit.scheduler.BukkitRunnable
 

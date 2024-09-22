@@ -1,6 +1,6 @@
-package ng.bossi.minekraft.paper.core
+package ng.bossi.minekraft.paper
 
-import ng.bossi.minekraft.paper.core.tasks.KrunnableHolder
+import ng.bossi.minekraft.paper.tasks.KrunnableHolder
 import org.bukkit.plugin.java.JavaPlugin
 
 lateinit var MinekraftInstance: Minekraft

@@ -1,6 +1,6 @@
-package ng.bossi.minekraft.paper.core.event
+package ng.bossi.minekraft.paper.event
 
-import ng.bossi.minekraft.paper.core.MinekraftInstance
+import ng.bossi.minekraft.paper.MinekraftInstance
 import org.bukkit.Bukkit
 import org.bukkit.event.Event
 import org.bukkit.event.EventPriority

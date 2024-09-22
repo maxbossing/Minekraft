@@ -1,4 +1,4 @@
-package ng.bossi.minekraft.paper.core.items
+package ng.bossi.minekraft.paper.items
 
 import net.kyori.adventure.text.Component
 import org.bukkit.Bukkit
