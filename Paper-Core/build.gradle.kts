@@ -2,6 +2,7 @@ plugins {
     kotlin
     adventure
     paper
+    serialization
 }
 
 dependencies {
