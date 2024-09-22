@@ -2,7 +2,6 @@ package ng.bossi.minekraft.paper.extensions
 
 import org.bukkit.Location
 import org.bukkit.World
-import org.bukkit.entity.Entity
 import org.bukkit.util.Vector
 
 fun Vector.isInRadius(center: Vector, radius: Double): Boolean = isInSphere(center, radius)
@@ -136,13 +135,21 @@ operator fun Vector.times(num: Number) = clone().multiply(num.toDouble())
 
 // mutable
 
-operator fun Vector.plusAssign(vec: Vector) { add(vec) }
+operator fun Vector.plusAssign(vec: Vector) {
+    add(vec)
+}
 
-operator fun Vector.minusAssign(vec: Vector) { subtract(vec) }
+operator fun Vector.minusAssign(vec: Vector) {
+    subtract(vec)
+}
 
-operator fun Vector.timesAssign(vec: Vector) { multiply(vec) }
+operator fun Vector.timesAssign(vec: Vector) {
+    multiply(vec)
+}
 
-operator fun Vector.timesAssign(num: Number) { multiply(num.toDouble()) }
+operator fun Vector.timesAssign(num: Number) {
+    multiply(num.toDouble())
+}
 
 infix fun Vector.increase(vec: Vector) = add(vec)
 infix fun Vector.reduce(vec: Vector) = subtract(vec)

@@ -1,4 +1,5 @@
 @file:Suppress("unused")
+
 package ng.bossi.minekraft.paper.utils
 
 import ng.bossi.minekraft.paper.MinekraftInstance
@@ -13,6 +14,7 @@ private fun key(key: String) = NamespacedKey(MinekraftInstance, "marker_$key")
 
 fun PersistentDataHolder.mark(key: String) =
     persistentDataContainer.set(key(key), PersistentDataType.BYTE, 1.toByte())
+
 fun PersistentDataHolder.unmark(key: String) = persistentDataContainer.remove(key(key))
 fun PersistentDataHolder.isMarked(key: String) = persistentDataContainer.has(key(key), PersistentDataType.BYTE)
 

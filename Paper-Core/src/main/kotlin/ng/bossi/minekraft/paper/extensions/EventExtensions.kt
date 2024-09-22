@@ -9,7 +9,9 @@ import org.bukkit.inventory.ItemStack
 
 var PrepareItemCraftEvent.isCancelled: Boolean
     get() = inventory.result?.type == Material.AIR
-    set(value) { if (value) inventory.result = ItemStack(Material.AIR) else inventory.result = inventory.recipe?.result }
+    set(value) {
+        if (value) inventory.result = ItemStack(Material.AIR) else inventory.result = inventory.recipe?.result
+    }
 
 val PlayerInteractEntityEvent.usedItem: ItemStack?
     get() {

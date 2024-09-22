@@ -8,7 +8,7 @@ fun Player.saturate() {
     saturation = foodLevel.toFloat()
 }
 
-fun Player.hand(hand: EquipmentSlot) = when(hand) {
+fun Player.hand(hand: EquipmentSlot) = when (hand) {
     EquipmentSlot.HAND -> inventory.itemInMainHand
     EquipmentSlot.OFF_HAND -> inventory.itemInOffHand
     else -> null

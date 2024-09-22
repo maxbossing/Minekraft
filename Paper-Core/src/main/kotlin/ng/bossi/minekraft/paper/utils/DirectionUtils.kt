@@ -1,9 +1,8 @@
 package ng.bossi.minekraft.paper.utils
 
 import org.bukkit.Location
-import javax.smartcardio.Card
 
-enum class VerticalDirection { UP, DOWN, STRAIGHT}
+enum class VerticalDirection { UP, DOWN, STRAIGHT }
 enum class CardinalDirection { NORTH, EAST, SOUTH, WEST }
 
 fun Location.verticalDirection(): VerticalDirection = when {
