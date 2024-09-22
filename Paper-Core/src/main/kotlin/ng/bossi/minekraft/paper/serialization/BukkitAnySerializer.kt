@@ -1,6 +1,5 @@
 package ng.bossi.minekraft.paper.serialization
 
-
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.InternalSerializationApi
 import kotlinx.serialization.KSerializer

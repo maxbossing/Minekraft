@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package ng.bossi.minekraft.paper.serialization.impl
 
 import kotlinx.serialization.KSerializer

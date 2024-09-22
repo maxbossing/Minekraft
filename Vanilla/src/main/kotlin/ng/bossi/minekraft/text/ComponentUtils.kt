@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package ng.bossi.minekraft.text
 
 import net.kyori.adventure.text.Component
@@ -23,7 +25,8 @@ fun text(
                 TextDecoration.ITALIC to State.byBoolean(italic),
                 TextDecoration.UNDERLINED to State.byBoolean(underlined),
                 TextDecoration.STRIKETHROUGH to State.byBoolean(strikethrough),
-                TextDecoration.OBFUSCATED to State.byBoolean(obfuscated),)
+                TextDecoration.OBFUSCATED to State.byBoolean(obfuscated),
+            )
         )
     }
 

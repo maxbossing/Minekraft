@@ -42,16 +42,20 @@ fun task(
 
             if (isCancelled) {
                 if (shouldCancel || safeCallback)
-                    KrunnableHolder.activate(this)
+                    KRunnableHolder.activate(this)
                 else
-                    KrunnableHolder.remove(this)
+                    KRunnableHolder.remove(this)
             }
         }
     }.let { kTask ->
-        endCallback?.let { KrunnableHolder.add(kTask, it, safeCallback) }
+        endCallback?.let { KRunnableHolder.add(kTask, it, safeCallback) }
         period?.let {
             if (sync) kTask.runTaskTimer(MinekraftInstance, delay.inWholeSeconds * 20, period.inWholeSeconds * 20)
-            else kTask.runTaskTimerAsynchronously(MinekraftInstance, delay.inWholeSeconds * 20, period.inWholeSeconds * 20)
+            else kTask.runTaskTimerAsynchronously(
+                MinekraftInstance,
+                delay.inWholeSeconds * 20,
+                period.inWholeSeconds * 20
+            )
         }
 
         return kTask

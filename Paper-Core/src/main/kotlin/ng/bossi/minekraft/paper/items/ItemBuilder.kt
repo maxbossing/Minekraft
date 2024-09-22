@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package ng.bossi.minekraft.paper.items
 
 import net.kyori.adventure.text.Component
@@ -10,7 +12,7 @@ import org.bukkit.inventory.meta.ItemMeta
 fun itemStack(material: Material, builder: ItemStack.() -> Unit) = ItemStack(material).apply(builder)
 
 inline fun <reified T : ItemMeta> ItemStack.meta(builder: T.() -> Unit) =
-    ((itemMeta as? T)?: itemMeta(type, builder))?.let {
+    ((itemMeta as? T) ?: itemMeta(type, builder))?.let {
         itemMeta = it.apply(builder)
     }
 

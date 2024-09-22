@@ -2,7 +2,7 @@ package ng.bossi.minekraft.paper.tasks
 
 import org.bukkit.scheduler.BukkitRunnable
 
-internal object KrunnableHolder : AutoCloseable {
+internal object KRunnableHolder : AutoCloseable {
     private val runnableEndCallbacks = HashMap<BukkitRunnable, Pair<() -> Unit, Boolean>>()
     override fun close() {
         runnableEndCallbacks.values.forEach { if (it.second) it.first.invoke() }

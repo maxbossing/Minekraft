@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package ng.bossi.minekraft.paper.event
 
 import ng.bossi.minekraft.paper.MinekraftInstance

@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+@SuppressWarnings("unused")
 public class Kolors {
 
     // Decorations
@@ -220,6 +221,7 @@ public class Kolors {
 
     /**
      * Returns all [TextColor]s in this Class
+     *
      * @return a List of all Colors in this Class
      */
     public static List<TextColor> allColors() {
@@ -238,6 +240,7 @@ public class Kolors {
 
     /**
      * Returns all [TextDecoration]s in this class
+     *
      * @return a list of all Decorations in this class
      */
     public static List<TextDecoration> allDecorations() {
