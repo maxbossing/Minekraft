@@ -2,6 +2,7 @@ package ng.bossi.minekraft
 
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
+import net.kyori.adventure.text.minimessage.MiniMessage
 
 @OptIn(ExperimentalSerializationApi::class)
 val json by lazy {
@@ -14,3 +15,5 @@ val json by lazy {
         ignoreUnknownKeys = true
     }
 }
+
+val miniMessage by lazy { MiniMessage.miniMessage() }
