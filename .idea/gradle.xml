@@ -23,6 +23,7 @@
             <option value="$PROJECT_DIR$/Paper-Core" />
             <option value="$PROJECT_DIR$/Paper-Gui-KSpigot" />
             <option value="$PROJECT_DIR$/Vanilla" />
+            <option value="$PROJECT_DIR$/Vanilla-Config-Konfig" />
             <option value="$PROJECT_DIR$/buildSrc" />
           </set>
         </option>

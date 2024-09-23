@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Paper-Core/Minekraft.Paper-Core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Paper-Core/Minekraft.Paper-Core.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Paper-Gui-KSpigot/Minekraft.Paper-Gui-KSpigot.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Paper-Gui-KSpigot/Minekraft.Paper-Gui-KSpigot.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Paper-Gui-KSpigot/Minekraft.Paper-Gui-KSpigot.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Paper-Gui-KSpigot/Minekraft.Paper-Gui-KSpigot.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Vanilla-Config-Konfig/Minekraft.Vanilla-Config-Konfig.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Vanilla-Config-Konfig/Minekraft.Vanilla-Config-Konfig.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Vanilla-Config-Konfig/Minekraft.Vanilla-Config-Konfig.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Vanilla-Config-Konfig/Minekraft.Vanilla-Config-Konfig.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Vanilla/Minekraft.Vanilla.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Vanilla/Minekraft.Vanilla.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Vanilla/Minekraft.Vanilla.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Vanilla/Minekraft.Vanilla.test.iml" />
     </modules>

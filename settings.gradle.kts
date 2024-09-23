@@ -8,5 +8,6 @@ plugins {
 }
 
 include(":Vanilla")
+include(":Vanilla-Config-Konfig")
 include(":Paper-Core")
 include(":Paper-Gui-KSpigot")
