@@ -3,6 +3,7 @@
 package ng.bossi.minekraft.paper.gui.kspigot
 
 import net.kyori.adventure.text.Component
+import ng.bossi.minekraft.annotation.MinekraftInternal
 import ng.bossi.minekraft.paper.event.listener
 import ng.bossi.minekraft.paper.extensions.closeForViewers
 import org.bukkit.entity.Player
@@ -200,6 +201,7 @@ class GUIInstance<T : ForInventory>(
      * Registers this GUI.
      * (KSpigot will listen for actions in the inventory.)
      */
+    @OptIn(MinekraftInternal::class)
     @Suppress("UNCHECKED_CAST")
     fun register() = KSpigotGUI.guiHolder.register(this as GUIInstance<ForInventory>)
 
@@ -207,6 +209,7 @@ class GUIInstance<T : ForInventory>(
      * Stops KSpigot from listening to actions in this
      * GUI anymore.
      */
+    @OptIn(MinekraftInternal::class)
     fun unregister() {
         @Suppress("UNCHECKED_CAST")
         KSpigotGUI.guiHolder.unregister(this as GUIInstance<ForInventory>)

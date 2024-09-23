@@ -1,11 +1,13 @@
 package ng.bossi.minekraft.paper.gui.kspigot
 
+import ng.bossi.minekraft.annotation.MinekraftInternal
 import ng.bossi.minekraft.paper.event.listener
 import ng.bossi.minekraft.paper.extensions.closeForViewers
 import org.bukkit.entity.Player
 import org.bukkit.event.inventory.*
 import org.bukkit.inventory.Inventory
 
+@MinekraftInternal
 object GUIHolder : AutoCloseable {
     private val registered = HashMap<Inventory, GUIInstance<ForInventory>>()
 

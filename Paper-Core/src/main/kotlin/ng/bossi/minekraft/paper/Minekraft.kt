@@ -2,6 +2,7 @@
 
 package ng.bossi.minekraft.paper
 
+import ng.bossi.minekraft.annotation.MinekraftInternal
 import ng.bossi.minekraft.paper.module.PaperModule
 import ng.bossi.minekraft.paper.tasks.KRunnableHolder
 import org.bukkit.plugin.java.JavaPlugin
@@ -9,6 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin
 lateinit var MinekraftInstance: Minekraft
     private set
 
+@OptIn(MinekraftInternal::class)
 abstract class Minekraft : JavaPlugin() {
     private val kRunnableHolderProperty = lazy { KRunnableHolder }
     internal val kRunnableHolder by kRunnableHolderProperty

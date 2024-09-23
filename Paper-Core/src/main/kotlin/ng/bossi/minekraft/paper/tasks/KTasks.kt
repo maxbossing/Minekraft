@@ -1,5 +1,7 @@
+@file:Suppress("Unused")
 package ng.bossi.minekraft.paper.tasks
 
+import ng.bossi.minekraft.annotation.MinekraftInternal
 import ng.bossi.minekraft.paper.MinekraftInstance
 import org.bukkit.Bukkit
 import org.bukkit.scheduler.BukkitRunnable
@@ -12,6 +14,7 @@ abstract class KTask(
 ) : BukkitRunnable()
 
 
+@OptIn(MinekraftInternal::class)
 fun task(
     sync: Boolean = true,
     delay: Duration = Duration.ZERO,

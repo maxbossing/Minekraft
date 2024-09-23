@@ -1,10 +1,11 @@
 package ng.bossi.minekraft.paper.gui.kspigot
 
+import ng.bossi.minekraft.annotation.MinekraftInternal
 import ng.bossi.minekraft.paper.Minekraft
 import ng.bossi.minekraft.paper.module.PaperModule
 
+@OptIn(MinekraftInternal::class)
 object KSpigotGUI : PaperModule() {
-
     private val guiHolderProperty = lazy { GUIHolder }
     internal val guiHolder by guiHolderProperty
 
