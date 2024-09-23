@@ -1,6 +1,6 @@
 package ng.bossi.minekraft.annotation
 
-@Retention(AnnotationRetention.RUNTIME)
+@Retention(AnnotationRetention.BINARY)
 @Target(AnnotationTarget.TYPEALIAS, AnnotationTarget.CLASS, AnnotationTarget.PROPERTY, AnnotationTarget.FUNCTION)
 @RequiresOptIn(
     message = "This is an internal API that should not be used outside of Minekraft." +
@@ -11,7 +11,7 @@ package ng.bossi.minekraft.annotation
 )
 annotation class MinekraftInternal
 
-@Retention(value = AnnotationRetention.RUNTIME)
+@Retention(value = AnnotationRetention.BINARY)
 @Target(AnnotationTarget.FUNCTION, AnnotationTarget.CLASS, AnnotationTarget.PROPERTY)
 @RequiresOptIn(
     message = "This is an experimental API. No guarantee that this API stays compatible" +
