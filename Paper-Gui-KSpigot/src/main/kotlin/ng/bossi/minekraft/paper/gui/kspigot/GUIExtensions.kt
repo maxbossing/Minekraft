@@ -1,3 +1,4 @@
+@file:Suppress("UNUSED")
 package ng.bossi.minekraft.paper.gui.kspigot
 
 import org.bukkit.entity.Player

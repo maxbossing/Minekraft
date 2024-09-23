@@ -1,4 +1,4 @@
-@file:Suppress("MemberVisibilityCanBePrivate")
+@file:Suppress("MemberVisibilityCanBePrivate", "Unused")
 
 package ng.bossi.minekraft.paper.gui.kspigot.elements
 

@@ -1,9 +1,8 @@
-@file:Suppress("MemberVisibilityCanBePrivate")
+@file:Suppress("MemberVisibilityCanBePrivate", "Unused")
 
 package ng.bossi.minekraft.paper.gui.kspigot
 
 import net.kyori.adventure.text.Component
-import ng.bossi.minekraft.paper.MinekraftInstance
 import ng.bossi.minekraft.paper.event.listener
 import ng.bossi.minekraft.paper.extensions.closeForViewers
 import org.bukkit.entity.Player
