@@ -9,3 +9,4 @@ plugins {
 
 include(":Vanilla")
 include(":Paper-Core")
+include(":Paper-Gui-KSpigot")

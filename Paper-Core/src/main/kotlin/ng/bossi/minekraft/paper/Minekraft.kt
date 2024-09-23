@@ -2,7 +2,6 @@
 
 package ng.bossi.minekraft.paper
 
-import ng.bossi.minekraft.module.VanillaModule
 import ng.bossi.minekraft.paper.module.PaperModule
 import ng.bossi.minekraft.paper.tasks.KRunnableHolder
 import org.bukkit.plugin.java.JavaPlugin
