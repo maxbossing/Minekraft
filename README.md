@@ -14,32 +14,36 @@ development experience for kotlin connoisseurs
 As long as Minekraft is not officially released, I will not provide builds for it. If you want to use it,
 prove yourself capable enough of dealing with it by building it.
 
-### Implementing Minekraft
-```kotlin
-/*
- * This is your Main Entrypoint, instead of `JavaPlugin()`
- * WARNING: Do not override on(Load|Enable|Disable), this will break Minekraft!
- * override load, start and stop instead
- */
-class Main() : Minekraft() {
-    
-    // If you want to use a Minekraft Module, you have to add them into modules
-    // This will automatically register them and do housekeeping
-    override val modules = listOf(KSpigotGUI)
-    
-    override fun load() {
-        // Server load stuff
-    }
-  
-    override fun start() {
-        // Server start stuff
-    }
-  
-    override fun stop() {
-        // Server stop stuff
-    }
-}
-```
+Also, this thing is still entirely undocumented, untested and without any instructions. 
+
+## Modules
+Because Minekraft does not want to be a big monolithic library, it is split into multiple modules that can be included 
+to fit your needs. 
+
+There are two different kinds of Modules: `Core Modules` and `Platform Modules`
+
+### Core Modules
+Core Modules are modules that can be used on any Platform Minekraft supports, for example `Vanilla-Config-Konfig`, which 
+is a port of [btwonion's Konfig](https://github.com/btwonion/konfig). As this library only needs `kotlinx.serialization`,
+it is set up as a platform-independent module that can be used by anyone.
+
+**Actively maintained Core Modules:**
+- Vanilla - The Base Module for all Minekraft modules
+- Vanilla-config-konfig - A port of [btwonion's Konfig](https://github.com/btwonion/konfig), which per default only 
+supports FabricMC but has been ported by the Minekraft team
+
+### Platform Modules
+Platform Modules are modules that are specific to one target of Minekraft, for example Paper or Fabric. An example of 
+this is `Paper-Gui-KSpigot`, a Minekraft port of the [KSpigot GUI Library](https://github.com/jakobkmar/kspigot), which 
+will only work on Paper and has no way to make it work on fabric without completely rewriting it.
+
+> Platform Modules have to be registered in your Entrypoint to work, please check out the documentation of your Platform 
+> to find out how to.
+
+**Actively maintained Platform Modules:**  
+Paper:
+- `Paper-Core` - The Base Module for all Minekraft modules targeting Paper
+- `Paper-Gui-KSpigot` - A port of the [KSpigot GUI Library](https://github.com/jakobkmar/kspigot)
 
 ## Credits
 This library is a combination of many different MC utilities from all over the internet, and I hope I can credit
@@ -58,7 +62,8 @@ to contact me (`@__VA_ARGS__` on Discord, `@va_args:matrix.org` on matrix)
 
 - [ ] Document your code you fucking shithead 
 
-
+- [ ] Vanilla
+  - Config API (kotlinx.serialization)
 - [ ] Fabric 
   - [ ] Somewhat parity with paper module
 - [ ] Paper
