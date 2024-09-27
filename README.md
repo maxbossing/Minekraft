@@ -58,13 +58,14 @@ to contact me (`@__VA_ARGS__` on Discord, `@va_args:matrix.org` on matrix)
   - Many Extensions/Utils have been ported from KSpigot, because they're so frigging good
 - [bukkit-kotlin-serialization](https://github.com/typst-io/bukkit-kotlin-serialization)
   - `minekraft.paper.serialization` has been adapted from this
-
+- [Konfig](https://github.com/btwonion/konfig)
+  - `Vanilla-Config-Konfig` is a port of this very useful library, as it is sadly only published for Fabric
 ## Todo
 
 - [ ] Document your code you fucking shithead 
 
 - [ ] Vanilla
-  - Config API (kotlinx.serialization)
+  - [x] Config API (kotlinx.serialization) [`Vanilla-Config-Konfig` will suffice for now]
 - [ ] Fabric 
   - [ ] Somewhat parity with paper module
 - [ ] Paper
