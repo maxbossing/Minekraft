@@ -44,6 +44,7 @@ will only work on Paper and has no way to make it work on fabric without complet
 Paper:
 - `Paper-Core` - The Base Module for all Minekraft modules targeting Paper
 - `Paper-Gui-KSpigot` - A port of the [KSpigot GUI Library](https://github.com/jakobkmar/kspigot)
+- `Paper-Metrics-BStats` - BStats Metrics as a Minekraft Module
 
 ## Credits
 This library is a combination of many different MC utilities from all over the internet, and I hope I can credit
