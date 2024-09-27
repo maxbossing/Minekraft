@@ -28,8 +28,8 @@ is a port of [btwonion's Konfig](https://github.com/btwonion/konfig). As this li
 it is set up as a platform-independent module that can be used by anyone.
 
 **Actively maintained Core Modules:**
-- Vanilla - The Base Module for all Minekraft modules
-- Vanilla-config-konfig - A port of [btwonion's Konfig](https://github.com/btwonion/konfig), which per default only 
+- `Vanilla` - The Base Module for all Minekraft modules
+- `Vanilla-Config-Konfig` - A port of [btwonion's Konfig](https://github.com/btwonion/konfig), which per default only 
 supports FabricMC but has been ported by the Minekraft team
 
 ### Platform Modules
