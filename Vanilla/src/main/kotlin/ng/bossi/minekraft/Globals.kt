@@ -16,4 +16,4 @@ val json by lazy {
     }
 }
 
-val miniMessage by lazy { MiniMessage.miniMessage() }
+var miniMessage = MiniMessage.miniMessage()
