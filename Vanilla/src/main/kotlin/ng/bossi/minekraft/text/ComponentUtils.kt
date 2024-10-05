@@ -11,27 +11,29 @@ import net.kyori.adventure.text.format.TextDecoration.State
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer
 
+// If multiple colors, will be deserialized as a gradient from minimessage
 fun text(
     str: String,
-    color: TextColor? = null,
+    vararg color: TextColor = arrayOf(Kolors.GRAY),
     bold: Boolean = false,
     italic: Boolean = false,
     underlined: Boolean = false,
     strikethrough: Boolean = false,
     obfuscated: Boolean = false,
-): Component = Component.text(str)
-    .apply {
-        color(color)
-        decorations(
-            mapOf(
-                TextDecoration.BOLD to State.byBoolean(bold),
-                TextDecoration.ITALIC to State.byBoolean(italic),
-                TextDecoration.UNDERLINED to State.byBoolean(underlined),
-                TextDecoration.STRIKETHROUGH to State.byBoolean(strikethrough),
-                TextDecoration.OBFUSCATED to State.byBoolean(obfuscated),
+): Component =
+    (if (color.size == 1) Component.text(str).color(color.first()) else "<gradient:${color.joinToString(":") { it.asHexString() }}>$str</gradient>".miniMessage())
+        .apply {
+            decorations(
+                mapOf(
+                    TextDecoration.BOLD to State.byBoolean(bold),
+                    TextDecoration.ITALIC to State.byBoolean(italic),
+                    TextDecoration.UNDERLINED to State.byBoolean(underlined),
+                    TextDecoration.STRIKETHROUGH to State.byBoolean(strikethrough),
+                    TextDecoration.OBFUSCATED to State.byBoolean(obfuscated),
+                )
             )
-        )
-    }
+        }
+
 
 operator fun Component.plus(component: Component) = append(component)
 
