@@ -2,6 +2,7 @@
 
 package ng.bossi.minekraft.text
 
+import net.kyori.adventure.audience.Audience
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.TextReplacementConfig
 import net.kyori.adventure.text.event.ClickEvent
@@ -51,6 +52,7 @@ fun Component.url(url: String) = clickEvent(ClickEvent.openUrl(url))
 fun Component.command(command: String) = clickEvent(ClickEvent.runCommand(command))
 fun Component.suggest(suggestion: String) = clickEvent(ClickEvent.suggestCommand(suggestion))
 fun Component.copy(copy: String) = clickEvent(ClickEvent.copyToClipboard(copy))
+fun Component.callback(callback: (Audience) -> Unit) = clickEvent(ClickEvent.callback(callback))
 
 fun String.component() = Component.text(this)
 fun String.miniMessage() = ng.bossi.minekraft.miniMessage.deserialize(this)
