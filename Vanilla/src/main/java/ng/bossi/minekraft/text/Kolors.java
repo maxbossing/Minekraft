@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+//TODO: Show colors in JavaDocs
 @SuppressWarnings("unused")
 public class Kolors {
 
