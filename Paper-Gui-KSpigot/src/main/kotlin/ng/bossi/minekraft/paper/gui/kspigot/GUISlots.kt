@@ -2,6 +2,7 @@
 
 package ng.bossi.minekraft.paper.gui.kspigot
 
+import ng.bossi.minekraft.annotation.MinekraftInternal
 import ng.bossi.minekraft.extensions.MinMaxPair
 
 
@@ -82,6 +83,7 @@ internal enum class InventorySlotRangeType {
     RECTANGLE,
 }
 
+@OptIn(MinekraftInternal::class)
 class InventorySlotRange<out T : ForInventory> internal constructor(
     startSlot: SingleInventorySlot<out T>,
     endSlot: SingleInventorySlot<out T>,
