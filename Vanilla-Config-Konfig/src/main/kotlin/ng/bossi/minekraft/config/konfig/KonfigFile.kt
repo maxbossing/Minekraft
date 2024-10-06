@@ -7,5 +7,5 @@ import kotlin.reflect.KClass
 
 @MinekraftInternal
 data class ConfigFile<T : @Serializable Any>(
-    val type: KClass<T>, val settings: ConfigSettings, val defaultInstance: T, val json: Json
+    val type: KClass<T>, val settings: ConfigSettings, val defaultInstance: T
 )

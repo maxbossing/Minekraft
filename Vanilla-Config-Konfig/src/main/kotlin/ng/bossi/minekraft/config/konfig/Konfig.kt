@@ -30,15 +30,9 @@ inline fun <reified T : @Serializable Any> konfig(
     path: Path,
     currentVersion: Int,
     defaultConfig: T,
-    crossinline jsonBuilder: JsonBuilder.() -> Unit = {},
     noinline migration: Migration<T>
 ) {
-    val json = Json {
-        prettyPrint = true
-        encodeDefaults = true
-        jsonBuilder()
-    }
-    konfigFiles.add(ConfigFile(T::class, ConfigSettings(path, currentVersion, migration), defaultConfig, json))
+    konfigFiles.add(ConfigFile(T::class, ConfigSettings(path, currentVersion, migration), defaultConfig))
 }
 
 @Suppress("unused", "unchecked_cast")
@@ -46,7 +40,6 @@ inline fun <reified T : @Serializable Any> loadConfig(): @Serializable T {
     val configFile = konfigFiles.find { it.type == T::class } as? ConfigFile<T>
     if (configFile == null) throw IllegalArgumentException("No config for class ${T::class.simpleName} found!")
 
-    val json = configFile.json
     val defaultInstance = configFile.defaultInstance
     val path = configFile.settings.path
 
@@ -66,7 +59,7 @@ inline fun <reified T : @Serializable Any> saveConfig(config: @Serializable T) {
     if (file == null) throw IllegalArgumentException("No config for class ${T::class.simpleName} found!")
     val path = file.settings.path
 
-    path.writeText(file.json.encodeToString(Konfig(file.settings.currentVersion, config)))
+    path.writeText(json.encodeToString(Konfig(file.settings.currentVersion, config)))
 }
 
 @MinekraftInternal
@@ -83,7 +76,7 @@ inline fun <reified T : @Serializable Any> Path.configInstantiated(defaultInstan
 inline fun <reified T : @Serializable Any> handleException(
     fileText: String, configFile: ConfigFile<T>
 ): @Serializable T {
-    val jsonTree = runCatching { configFile.json.parseToJsonElement(fileText) }.getOrNull() ?: return resetConfig(configFile)
+    val jsonTree = runCatching { json.parseToJsonElement(fileText) }.getOrNull() ?: return resetConfig(configFile)
     val version = jsonTree.jsonObject["version"]?.jsonPrimitive?.intOrNull
     if (version == configFile.settings.currentVersion) return resetConfig(configFile)
 
