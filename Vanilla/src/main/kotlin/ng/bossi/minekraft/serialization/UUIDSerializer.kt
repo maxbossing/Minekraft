@@ -15,12 +15,12 @@ typealias SerializableUUID = @Serializable(UUIDSerializer::class) UUID
 object UUIDSerializer : KSerializer<UUID> {
     override val descriptor = PrimitiveSerialDescriptor("UUID", PrimitiveKind.STRING)
 
-    private val uuidPattern = "(\\w{8})(\\w{4})(\\w{4})(\\w{4})(\\w{12})"
+    private const val UUID_PATTERN = "(\\w{8})(\\w{4})(\\w{4})(\\w{4})(\\w{12})"
 
     override fun deserialize(decoder: Decoder): UUID {
         var uuid = decoder.decodeString()
         if (uuid.contains("-")) {
-            uuid = uuid.replace(uuidPattern, "$1-$2-$3-$4-$5")
+            uuid = uuid.replace(UUID_PATTERN, "$1-$2-$3-$4-$5")
         }
         return UUID.fromString(uuid)
     }
