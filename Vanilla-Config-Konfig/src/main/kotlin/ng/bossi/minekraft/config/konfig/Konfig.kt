@@ -1,4 +1,4 @@
-@file:OptIn(MinekraftInternal::class)
+@file:OptIn(MinekraftInternal::class, MinekraftInternal::class)
 package ng.bossi.minekraft.config.konfig
 
 import ng.bossi.minekraft.annotation.MinekraftInternal
