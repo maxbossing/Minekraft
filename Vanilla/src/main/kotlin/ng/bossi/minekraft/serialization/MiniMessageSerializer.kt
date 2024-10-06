@@ -1,6 +1,8 @@
+@file:Suppress("unused")
 package ng.bossi.minekraft.serialization
 
 import kotlinx.serialization.KSerializer
+import kotlinx.serialization.Serializable
 import kotlinx.serialization.descriptors.PrimitiveKind
 import kotlinx.serialization.descriptors.PrimitiveSerialDescriptor
 import kotlinx.serialization.descriptors.SerialDescriptor
@@ -8,7 +10,21 @@ import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
 import net.kyori.adventure.text.Component
 import ng.bossi.minekraft.miniMessage
+import net.kyori.adventure.text.minimessage.MiniMessage
+import java.util.*
 
+/**
+ * Alias type for [Component]s serialized with [MiniMessageSerializer]
+ * @since 0.0.1
+ */
+typealias MiniMessageComponent = @Serializable(with = MiniMessageSerializer::class) Component
+
+/**
+ * A [KSerializer] for [Component]s using the global [MiniMessage] instance
+ * @author Max Bossing
+ * @since 0.0.1
+ * @see miniMessage
+ */
 object MiniMessageSerializer : KSerializer<Component> {
     override val descriptor: SerialDescriptor = PrimitiveSerialDescriptor("MiniMessage", PrimitiveKind.STRING)
 

@@ -10,8 +10,17 @@ import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
 import java.util.*
 
+/**
+ * Alias type for [UUID]s serialized with [UUIDSerializer]
+ * @since 0.0.1
+ */
 typealias SerializableUUID = @Serializable(UUIDSerializer::class) UUID
 
+/**
+ * A [KSerializer] for [UUID]s
+ * @author Paul Kindler (https://github.com/kxmpxtxnt)
+ * @since 0.0.1
+ */
 object UUIDSerializer : KSerializer<UUID> {
     override val descriptor = PrimitiveSerialDescriptor("UUID", PrimitiveKind.STRING)
 
