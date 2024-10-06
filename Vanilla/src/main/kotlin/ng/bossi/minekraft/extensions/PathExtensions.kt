@@ -2,14 +2,20 @@
 
 package ng.bossi.minekraft.extensions
 
+import kotlinx.serialization.encodeToString
 import ng.bossi.minekraft.json
 import java.nio.file.Path
-import kotlin.io.path.createFile
-import kotlin.io.path.createParentDirectories
-import kotlin.io.path.exists
-import kotlin.io.path.readText
+import kotlin.io.path.*
 
-inline fun <reified T : Any> Path.loadSerializable(): T? {
+/**
+ * Tries to load the contents of the [Path] as [T] using the global [json], returning null on failure or if the [Path] does not exist
+ *
+ * If the file does not exist, it will be created and [default] (if set) will be dumped  and returned, else null will be returned
+ *
+ * @param T the [Serializable] that the contents should be deserialized to
+ * @return [T] on success, null on failure
+ */
+inline fun <reified T : Any> Path.loadSerializable(noinline default: (() -> T)? = null): T? {
     return if (exists())
         try {
             json.decodeFromString<T>(readText())
@@ -20,6 +26,10 @@ inline fun <reified T : Any> Path.loadSerializable(): T? {
     else {
         createParentDirectories()
         createFile()
+        default?.invoke()?.let {
+            this.writeText(json.encodeToString(it))
+            return it
+        }
         return null
     }
 }

@@ -2,10 +2,19 @@ package ng.bossi.minekraft.extensions
 
 import net.kyori.adventure.text.format.TextColor
 import java.awt.Color
-import java.awt.Color as JavaColor
 
-val TextColor.awt: JavaColor
-    get() = Color(value())
+/**
+ * Converts this adventure [TextColor] into a [java.awt.Color] object
+ * @return The [java.awt.Color] representation of this [TextColor]
+ * @author Max Bossing
+ * @since 0.0.1
+ */
+fun TextColor.awt(): Color = Color(value())
 
-val JavaColor.adventure: TextColor
-    get() = TextColor.color(rgb)
+/**
+ * Converts this [java.awt.Color] object into an adventure [TextColor]
+ * @return The adventure [TextColor] representation of this [java.awt.Color]
+ * @author Max Bossing
+ * @since 0.0.1
+ */
+fun java.awt.Color.adventure(): TextColor = TextColor.color(rgb)
