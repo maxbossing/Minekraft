@@ -10,8 +10,16 @@ import kotlinx.serialization.encoding.Encoder
 import ng.bossi.minekraft.paper.serialization.ConfigurationSerializableSerializer
 import org.bukkit.inventory.ItemStack
 
+/**
+ * Alias for [ItemStack]s using the [ItemStackSerializer]
+ */
 typealias SerializableItemStack = @Serializable(ItemStackSerializer::class) ItemStack
 
+/**
+ * Serializer for [ItemStack]s using [ConfigurationSerializableSerializer]
+ * @since 0.0.1
+ * @author Junhyung Im (https://github.com/entrypointkr)
+ */
 object ItemStackSerializer : KSerializer<ItemStack> {
     override val descriptor: SerialDescriptor
         get() = ConfigurationSerializableSerializer.descriptor

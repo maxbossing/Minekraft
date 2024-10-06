@@ -9,6 +9,11 @@ import kotlinx.serialization.encoding.Encoder
 import org.bukkit.configuration.serialization.ConfigurationSerializable
 import org.bukkit.configuration.serialization.ConfigurationSerialization
 
+/**
+ * Serializer for [Any] that implements [ConfigurationSerializable]
+ * @since 0.0.1
+ * @author Junhyung Im (https://github.com/entrypointkr)
+ */
 object ConfigurationSerializableSerializer : KSerializer<ConfigurationSerializable> {
     private val mapSerializer: KSerializer<Map<String, Any?>> =
         MapSerializer(

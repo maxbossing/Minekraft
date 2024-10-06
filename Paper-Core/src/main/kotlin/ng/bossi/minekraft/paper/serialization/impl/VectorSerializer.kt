@@ -10,8 +10,16 @@ import kotlinx.serialization.encoding.Encoder
 import ng.bossi.minekraft.paper.serialization.ConfigurationSerializableSerializer
 import org.bukkit.util.Vector
 
+/**
+ * Alias for [Vector]s using the [VectorSerializer]
+ */
 typealias VectorSerializable = @Serializable(VectorSerializer::class) Vector
 
+/**
+ * Serializer for [Vector]s using [ConfigurationSerializableSerializer]
+ * @since 0.0.1
+ * @author Junhyung Im (https://github.com/entrypointkr)
+ */
 object VectorSerializer : KSerializer<Vector> {
     override val descriptor: SerialDescriptor
         get() = ConfigurationSerializableSerializer.descriptor

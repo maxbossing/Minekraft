@@ -16,6 +16,11 @@ import kotlinx.serialization.json.*
 import org.bukkit.configuration.serialization.ConfigurationSerializable
 import org.bukkit.configuration.serialization.ConfigurationSerialization
 
+/**
+ * Serializer for Any type that is primitive or implements [ConfigurationSerializable] (using [ConfigurationSerializableSerializer])
+ * @since 0.0.1
+ * @author Junhyung Im (https://github.com/entrypointkr)
+ */
 @OptIn(InternalSerializationApi::class, ExperimentalSerializationApi::class)
 internal object ConfigAnySerializer : KSerializer<Any?> {
     override val descriptor: SerialDescriptor =

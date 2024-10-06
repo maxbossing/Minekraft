@@ -6,21 +6,35 @@ import net.kyori.adventure.text.format.TextColor
 import org.bukkit.Color as BukkitColor
 import java.awt.Color as JavaColor
 
-// FROM ADVENTURE TEXTCOLOR
+/**
+ * Convert this [TextColor] into a [BukkitColor]
+ * @return a [BukkitColor] representing this [TextColor]
+ * @since 0.0.1
+ * @author Max Bossing
+ */
+fun TextColor.bukkit() = BukkitColor.fromRGB(value())
 
-val TextColor.bukkit
-    get() = BukkitColor.fromRGB(value())
+/**
+ * Convert this [BukkitColor] into a [TextColor]
+ * @return a [TextColor] representing this [BukkitColor]
+ * @since 0.0.1
+ * @author Max Bossing
+ */
+fun BukkitColor.adventure(): TextColor = TextColor.color(asRGB())
 
-// FROM BUKKIT COLOR
+/**
+ * Convert this [BukkitColor] into a [JavaColor]
+ * @return a [JavaColor] representing this [BukkitColor]
+ * @since 0.0.1
+ * @author Max Bossing
+ */
+fun BukkitColor.awt(): JavaColor = JavaColor(asRGB())
 
-val BukkitColor.adventure: TextColor
-    get() = TextColor.color(asRGB())
-
-val BukkitColor.awt: JavaColor
-    get() = JavaColor(asRGB())
-
-// FROM JAVA AWT COLOR
-
-val JavaColor.bukkit
-    get() = BukkitColor.fromRGB(rgb)
+/**
+ * Convert this [JavaColor] into a [BukkitColor]
+ * @return a [BukkitColor] representing this [JavaColor]
+ * @since 0.0.1
+ * @author Max Bossing
+ */
+fun JavaColor.bukkit() = BukkitColor.fromRGB(rgb)
 
