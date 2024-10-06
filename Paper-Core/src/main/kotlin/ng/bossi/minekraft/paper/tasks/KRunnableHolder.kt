@@ -3,6 +3,11 @@ package ng.bossi.minekraft.paper.tasks
 import ng.bossi.minekraft.annotation.MinekraftInternal
 import org.bukkit.scheduler.BukkitRunnable
 
+/**
+ * Responsible for executing the End Callbacks for [KTask]s
+ * @author Jakob Kretzschmar (https://github.com/jakobkmar)
+ * @since 0.0.1
+ */
 @MinekraftInternal
 internal object KRunnableHolder : AutoCloseable {
     private val runnableEndCallbacks = HashMap<BukkitRunnable, Pair<() -> Unit, Boolean>>()
