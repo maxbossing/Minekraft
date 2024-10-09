@@ -3,6 +3,7 @@ plugins {
     adventure
     paper
     serialization
+    dokka
 }
 
 dependencies {

@@ -1,0 +1,1 @@
+Minekraft is a modular library for easy development of all things Minecraft
