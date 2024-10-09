@@ -8,5 +8,5 @@ repositories {
 }
 
 dependencies {
-    paperweight.paperDevBundle("${Versions.MINECRAFT}-R0.1-SNAPSHOT")
+    paperweight.paperDevBundle("${Constants.Version.MINECRAFT}-R0.1-SNAPSHOT")
 }

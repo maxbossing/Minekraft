@@ -1,6 +1,7 @@
 plugins {
     kotlin
     serialization
+    dokka
 }
 
 repositories {

@@ -1,4 +1,8 @@
+plugins {
+    `dokka-root`
+}
+
 allprojects {
     group = "ng.bossi"
-    version = 1
+    version = "0.0.1"
 }
