@@ -1,0 +1,266 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>KListener</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            Minekraft
+                    </a>            </div>
+            <div class="library-version">0.0.1
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":Paper-Core:dokkaHtmlPartial/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="Paper-Core::ng.bossi.minekraft.paper.event/KListener///PointingToDeclaration//1400081992">
+  <div class="breadcrumbs"><a href="../../index.html">Paper-Core</a><span class="delimiter">/</span><a href="../index.html">ng.bossi.minekraft.paper.event</a><span class="delimiter">/</span><span class="current">KListener</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>KListener</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Paper-Core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">KListener</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator"> : </span><span data-unresolved-link="org.bukkit.event/Event///PointingToDeclaration/">Event</span><span class="token operator">&gt;</span> : <span data-unresolved-link="org.bukkit.event/Listener///PointingToDeclaration/">Listener</span></div><p class="paragraph">Represents a <span data-unresolved-link="org.bukkit.event/Listener///PointingToDeclaration/">Listener</span> that listens to only one <span data-unresolved-link="org.bukkit.event/Event///PointingToDeclaration/">Event</span> and that can have multiple <a href="../-event-filter/index.html">EventFilter</a>s and <a href="../-event-handler/index.html">EventHandler</a>s</p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">0.0.1</p></span><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">Max Bossing</p></span><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":Paper-Core:dokkaHtmlPartial/main" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../listener.html"><span><span>listener</span></span></a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="591051941%2FConstructors%2F1400081992" anchor-label="KListener" id="591051941%2FConstructors%2F1400081992" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":Paper-Core:dokkaHtmlPartial/main" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-k-listener.html"><span><span>KListener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="591051941%2FConstructors%2F1400081992"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Paper-Core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1288449874%2FProperties%2F1400081992" anchor-label="autoRegistration" id="-1288449874%2FProperties%2F1400081992" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Paper-Core:dokkaHtmlPartial/main" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="auto-registration.html"><span>auto</span><wbr><span><span>Registration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1288449874%2FProperties%2F1400081992"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Paper-Core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="auto-registration.html">autoRegistration</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If this Listener should be registered immediately</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1153231333%2FProperties%2F1400081992" anchor-label="ignoreCancelled" id="1153231333%2FProperties%2F1400081992" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Paper-Core:dokkaHtmlPartial/main" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ignore-cancelled.html"><span>ignore</span><wbr><span><span>Cancelled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1153231333%2FProperties%2F1400081992"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Paper-Core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="ignore-cancelled.html">ignoreCancelled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If this Listener should ignore previously cancelled events</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-582435603%2FProperties%2F1400081992" anchor-label="lifeTime" id="-582435603%2FProperties%2F1400081992" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Paper-Core:dokkaHtmlPartial/main" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="life-time.html"><span>life</span><wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-582435603%2FProperties%2F1400081992"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Paper-Core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="life-time.html">lifeTime</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/index.html">Duration</a></div><div class="brief "><p class="paragraph">The Lifetime after which this Listener will be unregistered</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1268015532%2FProperties%2F1400081992" anchor-label="maxUses" id="-1268015532%2FProperties%2F1400081992" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Paper-Core:dokkaHtmlPartial/main" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max-uses.html"><span>max</span><wbr><span><span>Uses</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1268015532%2FProperties%2F1400081992"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Paper-Core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="max-uses.html">maxUses</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">How many times this listener should be executed until it is unregistered automatically</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1902228370%2FProperties%2F1400081992" anchor-label="priority" id="1902228370%2FProperties%2F1400081992" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Paper-Core:dokkaHtmlPartial/main" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="priority.html"><span><span>priority</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1902228370%2FProperties%2F1400081992"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Paper-Core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="priority.html">priority</a><span class="token operator">: </span><span data-unresolved-link="org.bukkit.event/EventPriority///PointingToDeclaration/">EventPriority</span></div><div class="brief "><p class="paragraph">This Listeners <span data-unresolved-link="org.bukkit.event/EventPriority///PointingToDeclaration/">EventPriority</span></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1395531030%2FProperties%2F1400081992" anchor-label="uses" id="-1395531030%2FProperties%2F1400081992" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Paper-Core:dokkaHtmlPartial/main" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="uses.html"><span><span>uses</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1395531030%2FProperties%2F1400081992"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Paper-Core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="uses.html">uses</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">How many times the listener has been executed</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="46341419%2FFunctions%2F1400081992" anchor-label="filter" id="46341419%2FFunctions%2F1400081992" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Paper-Core:dokkaHtmlPartial/main" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="filter.html"><span><span>filter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="46341419%2FFunctions%2F1400081992"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Paper-Core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="filter.html"><span class="token function">filter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">filter<span class="token operator">: </span><a href="../-event-filter/index.html">EventFilter</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Add a new <a href="../-event-filter/index.html">EventFilter</a> to this Listener</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1439250385%2FFunctions%2F1400081992" anchor-label="handler" id="1439250385%2FFunctions%2F1400081992" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Paper-Core:dokkaHtmlPartial/main" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="handler.html"><span><span>handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1439250385%2FFunctions%2F1400081992"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Paper-Core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="handler.html"><span class="token function">handler</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../-event-handler/index.html">EventHandler</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Add a new <a href="../-event-handler/index.html">EventHandler</a> to this Listener</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-291158343%2FFunctions%2F1400081992" anchor-label="register" id="-291158343%2FFunctions%2F1400081992" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Paper-Core:dokkaHtmlPartial/main" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../register.html"><span><span>register</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-291158343%2FFunctions%2F1400081992"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Paper-Core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../register.html">T</a><span class="token operator"> : </span><span data-unresolved-link="org.bukkit.event/Event///PointingToDeclaration/">Event</span><span class="token operator">&gt; </span><a href="index.html">KListener</a><span class="token operator">&lt;</span><a href="../register.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../register.html"><span class="token function">register</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Register a <a href="index.html">KListener</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1400344024%2FFunctions%2F1400081992" anchor-label="unregister" id="1400344024%2FFunctions%2F1400081992" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Paper-Core:dokkaHtmlPartial/main" data-filterable-set=":Paper-Core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../unregister.html"><span><span>unregister</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1400344024%2FFunctions%2F1400081992"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Paper-Core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">KListener</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../unregister.html"><span class="token function">unregister</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Unregister a <a href="index.html">KListener</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2024 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

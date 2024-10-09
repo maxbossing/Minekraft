@@ -1,0 +1,265 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ng.bossi.minekraft.config.konfig</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" async></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../index.html">
+                            Minekraft
+                    </a>            </div>
+            <div class="library-version">0.0.1
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":Vanilla-Config-Konfig:dokkaHtmlPartial/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageids="Vanilla-Config-Konfig::ng.bossi.minekraft.config.konfig////PointingToDeclaration//-1708243705">
+  <div class="breadcrumbs"><a href="../index.html">Vanilla-Config-Konfig</a><span class="delimiter">/</span><span class="current">ng.bossi.minekraft.config.konfig</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button><button class="section-tab" data-togglable="PROPERTY,EXTENSION_PROPERTY">Properties</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-360175734%2FClasslikes%2F-1708243705" anchor-label="ConfigFile" id="-360175734%2FClasslikes%2F-1708243705" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Vanilla-Config-Konfig:dokkaHtmlPartial/main" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-config-file/index.html"><span>Config</span><wbr><span><span>File</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-360175734%2FClasslikes%2F-1708243705"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-config-file/index.html">ConfigFile</a><span class="token operator">&lt;</span><a href="-config-file/index.html">T</a><span class="token operator"> : </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><a href="-config-file/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>settings<span class="token operator">: </span><a href="-config-settings/index.html">ConfigSettings</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>defaultInstance<span class="token operator">: </span><a href="-config-file/index.html">T</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Represents a Config file (for example /config/test.json)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="512337987%2FClasslikes%2F-1708243705" anchor-label="ConfigSettings" id="512337987%2FClasslikes%2F-1708243705" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Vanilla-Config-Konfig:dokkaHtmlPartial/main" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-config-settings/index.html"><span>Config</span><wbr><span><span>Settings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="512337987%2FClasslikes%2F-1708243705"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-config-settings/index.html">ConfigSettings</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html">Path</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>currentVersion<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>migration<span class="token operator">: </span><a href="-migration/index.html">Migration</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Settings for a <a href="-config-file/index.html">ConfigFile</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1206972882%2FClasslikes%2F-1708243705" anchor-label="Konfig" id="-1206972882%2FClasslikes%2F-1708243705" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Vanilla-Config-Konfig:dokkaHtmlPartial/main" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-konfig/index.html"><span><span>Konfig</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1206972882%2FClasslikes%2F-1708243705"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-konfig/index.html">Konfig</a><span class="token operator">&lt;</span><a href="-konfig/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>version<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>config<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span>&nbsp;</span><a href="-konfig/index.html">T</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">The model of the json being stored.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-459324468%2FClasslikes%2F-1708243705" anchor-label="Migration" id="-459324468%2FClasslikes%2F-1708243705" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Vanilla-Config-Konfig:dokkaHtmlPartial/main" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-migration/index.html"><span><span>Migration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-459324468%2FClasslikes%2F-1708243705"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-migration/index.html">Migration</a><span class="token operator">&lt;</span><a href="-migration/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><span class="token punctuation">(</span>jsonTree<span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token punctuation">, </span>version<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span>&nbsp;</span><a href="-migration/index.html">T</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">A Migration is a lambda that has a <span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span> tree and a version number as argument and returns a T?</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="480713350%2FProperties%2F-1708243705" anchor-label="konfigFiles" id="480713350%2FProperties%2F-1708243705" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Vanilla-Config-Konfig:dokkaHtmlPartial/main" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="konfig-files.html"><span>konfig</span><wbr><span><span>Files</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="480713350%2FProperties%2F-1708243705"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="konfig-files.html">konfigFiles</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><a href="-config-file/index.html">ConfigFile</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-146509095%2FFunctions%2F-1708243705" anchor-label="configInstantiated" id="-146509095%2FFunctions%2F-1708243705" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Vanilla-Config-Konfig:dokkaHtmlPartial/main" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="config-instantiated.html"><span>config</span><wbr><span><span>Instantiated</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-146509095%2FFunctions%2F-1708243705"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="config-instantiated.html">T</a><span class="token operator"> : </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html">Path</a><span class="token punctuation">.</span><a href="config-instantiated.html"><span class="token function">configInstantiated</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultInstance<span class="token operator">: </span><a href="config-instantiated.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Either instantiate the default config or return false if the config already existed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="95205718%2FFunctions%2F-1708243705" anchor-label="handleException" id="95205718%2FFunctions%2F-1708243705" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Vanilla-Config-Konfig:dokkaHtmlPartial/main" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="handle-exception.html"><span>handle</span><wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="95205718%2FFunctions%2F-1708243705"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="handle-exception.html">T</a><span class="token operator"> : </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="handle-exception.html"><span class="token function">handleException</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fileText<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">configFile<span class="token operator">: </span><a href="-config-file/index.html">ConfigFile</a><span class="token operator">&lt;</span><a href="handle-exception.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span>&nbsp;</span><a href="handle-exception.html">T</a></div><div class="brief "><p class="paragraph">Handles migration or reset after faulty deserialization of the config.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="607852489%2FFunctions%2F-1708243705" anchor-label="konfig" id="607852489%2FFunctions%2F-1708243705" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Vanilla-Config-Konfig:dokkaHtmlPartial/main" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="konfig.html"><span><span>konfig</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="607852489%2FFunctions%2F-1708243705"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="konfig.html">T</a><span class="token operator"> : </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="konfig.html"><span class="token function">konfig</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html">Path</a><span class="token punctuation">, </span></span><span class="parameter ">currentVersion<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">defaultConfig<span class="token operator">: </span><a href="konfig.html">T</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">noinline </span>migration<span class="token operator">: </span><a href="-migration/index.html">Migration</a><span class="token operator">&lt;</span><a href="konfig.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This is the function that defines the base properties for config serialization.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1967488593%2FFunctions%2F-1708243705" anchor-label="loadConfig" id="-1967488593%2FFunctions%2F-1708243705" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Vanilla-Config-Konfig:dokkaHtmlPartial/main" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="load-config.html"><span>load</span><wbr><span><span>Config</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1967488593%2FFunctions%2F-1708243705"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="load-config.html">T</a><span class="token operator"> : </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="load-config.html"><span class="token function">loadConfig</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span>&nbsp;</span><a href="load-config.html">T</a></div><div class="brief "><p class="paragraph">Loads a Config from Disk and applies a migration if necessary</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2102474651%2FFunctions%2F-1708243705" anchor-label="resetConfig" id="2102474651%2FFunctions%2F-1708243705" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Vanilla-Config-Konfig:dokkaHtmlPartial/main" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reset-config.html"><span>reset</span><wbr><span><span>Config</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2102474651%2FFunctions%2F-1708243705"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="reset-config.html">T</a><span class="token operator"> : </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="reset-config.html"><span class="token function">resetConfig</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">configFile<span class="token operator">: </span><a href="-config-file/index.html">ConfigFile</a><span class="token operator">&lt;</span><a href="reset-config.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="reset-config.html">T</a></div><div class="brief "><p class="paragraph">Recreates and saves default config.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-26323419%2FFunctions%2F-1708243705" anchor-label="saveConfig" id="-26323419%2FFunctions%2F-1708243705" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":Vanilla-Config-Konfig:dokkaHtmlPartial/main" data-filterable-set=":Vanilla-Config-Konfig:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="save-config.html"><span>save</span><wbr><span><span>Config</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-26323419%2FFunctions%2F-1708243705"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Vanilla-Config-Konfig:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="save-config.html">T</a><span class="token operator"> : </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="save-config.html"><span class="token function">saveConfig</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">config<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span>&nbsp;</span><a href="save-config.html">T</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Saves a <a href="-config-file/index.html">ConfigFile</a> to disk If the configSettings are not applied via the <a href="konfig.html">konfig</a> function the config does not save.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2024 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
